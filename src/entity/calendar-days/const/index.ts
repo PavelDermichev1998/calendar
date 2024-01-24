@@ -1,2 +1,9 @@
-export const DAYS_NAMES = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-export const DAYS = ['10', '11', '12', '13', '14', '15', '16'];
+export const DAYS = [
+  { day: 10, weekday: 'M' },
+  { day: 11, weekday: 'T' },
+  { day: 12, weekday: 'W' },
+  { day: 13, weekday: 'T' },
+  { day: 14, weekday: 'F' },
+  { day: 15, weekday: 'S' },
+  { day: 16, weekday: 'S' },
+];

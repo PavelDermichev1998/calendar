@@ -1,5 +1,5 @@
 import { useUnit } from 'effector-react';
-import { $events, changeSelectedEvent } from 'shared/store/events-store';
+import { $events, changeSelectedEvent } from 'shared/store/events.store';
 
 export const useCalendarTime = () => {
   const [events, changeSelectedEventEv] = useUnit([$events, changeSelectedEvent]);

@@ -1,5 +1,5 @@
 import { useUnit } from 'effector-react';
-import { setEvent } from 'shared/store/events-store';
+import { setEvent } from 'shared/store/events.store';
 
 export const useHeader = () => {
   const setEventEv = useUnit(setEvent);

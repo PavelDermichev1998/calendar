@@ -1,12 +1,6 @@
 import { createEvent, createStore, sample } from 'effector';
 
-interface EventsType {
-  [key: number]: number[];
-}
-
-interface EventForChangeType {
-  [key: number]: number;
-}
+import { EventForChangeType, EventsType } from '../type/event.interface';
 
 export const $events = createStore<EventsType>({});
 export const $selectedEvent = createStore<EventForChangeType>({});

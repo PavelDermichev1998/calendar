@@ -3,7 +3,7 @@ import {
   $selectedEvent,
   $visibleDeleteBtn,
   deleteEvent,
-} from 'shared/store/events-store';
+} from 'shared/store/events.store';
 
 export const useFooter = () => {
   const [selectedEvent, deleteEventEv, visibleDeleteBtn] = useUnit([

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import cc from 'classcat';
 import { useUnit } from 'effector-react';
 
-import { DAYS, DAYS_NAMES } from './const';
+import { DAYS } from './const';
 import { $day, setDay } from './model/day-store';
 
 export const CalendarDays = () => {
@@ -12,24 +12,20 @@ export const CalendarDays = () => {
   return (
     <div className='bg-content_secondary py-2 pl-10'>
       <div className='grid grid-cols-7 text-center'>
-        {DAYS_NAMES.map((name, index) => (
-          <p key={index} className='text-[10px]'>
-            {name}
-          </p>
-        ))}
-      </div>
-      <div className='grid grid-cols-7 text-center'>
-        {DAYS.map((day, index) => (
-          <button
-            key={index}
-            className={cc([
-              'm-auto h-8 w-8 text-[16px]',
-              { 'rounded-full bg-red text-white': dayStore === index },
-            ])}
-            onClick={() => setDayEv(index)}
-          >
-            {day}
-          </button>
+        {DAYS.map((el, index) => (
+          <div key={index}>
+            <p className='text-[10px]'>{el.weekday}</p>
+            <button
+              key={index}
+              className={cc([
+                'm-auto h-8 w-8 text-[16px]',
+                { 'rounded-full bg-red text-white': dayStore === index },
+              ])}
+              onClick={() => setDayEv(index)}
+            >
+              {el.day}
+            </button>
+          </div>
         ))}
       </div>
       <div className='grid grid-cols-7 pt-2 text-center'>
