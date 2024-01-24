@@ -24,7 +24,7 @@ export const CalendarDays = () => {
             key={index}
             className={cc([
               'm-auto h-8 w-8 text-[16px]',
-              { 'bg-red rounded-full text-white': dayStore === index },
+              { 'rounded-full bg-red text-white': dayStore === index },
             ])}
             onClick={() => setDayEv(index)}
           >

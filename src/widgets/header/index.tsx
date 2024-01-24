@@ -9,7 +9,7 @@ export const Header = () => {
     <div className='sticky top-0 z-[10] bg-white'>
       <header className='flex items-center justify-between p-4'>
         <div>Interview Calendar</div>
-        <button className='text-red text-[30px]' onClick={addEventHandler}>
+        <button className='text-[30px] text-red' onClick={addEventHandler}>
           +
         </button>
       </header>
